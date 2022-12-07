@@ -9,7 +9,10 @@ export const Footer = () => {
     <footer className="footer">
       <Container>
         <Row className="align-items-center">
-      
+           <br/>     
+    <br/>
+    <br/>
+    <br/>
           <Col size={12} sm={6}>
             <img src="https://res.cloudinary.com/dw9fyi87w/image/upload/v1670353912/cog/cogLogo_kx8oaf.png" alt="Logo" />
           </Col>
