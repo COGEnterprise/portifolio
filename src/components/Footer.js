@@ -6,13 +6,11 @@ import navIcon3 from "../assets/img/nav-icon3.svg";
 
 export const Footer = () => {
   return (
-    <footer className="footer">
+    <footer className="footer pt-5">
       <Container>
-        <Row className="align-items-center">
+        <Row className="align-items-center pt-5">
            <br/>     
-    <br/>
-    <br/>
-    <br/>
+
           <Col size={12} sm={6}>
             <img src="https://res.cloudinary.com/dw9fyi87w/image/upload/v1670353912/cog/cogLogo_kx8oaf.png" alt="Logo" />
           </Col>
