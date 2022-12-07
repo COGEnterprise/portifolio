@@ -36,7 +36,7 @@ export const Contact = () => {
     setButtonText("Enviar");
     let result = await response.json();
     setFormDetails(formInitialDetails);
-    if (result.code == 200) {
+    if (result.code === 200) {
       setStatus({ succes: true, message: 'Message sent successfully'});
     } else {
       setStatus({ succes: false, message: 'Something went wrong, please try again later.'});
@@ -49,15 +49,12 @@ export const Contact = () => {
         <Row className="align-items-center">
           <Col size={12} md={6}>
             <TrackVisibility>
-              {({ isVisible }) =>
-                <img className={isVisible ? "animate__animated animate__zoomIn" : ""} src={contactImg} alt="Contact Us"/>
-              }
+                <img className='img-fluid'src={contactImg} alt="Contact Us"/>
             </TrackVisibility>
           </Col>
           <Col size={12} md={6}>
             <TrackVisibility>
-              {({ isVisible }) =>
-                <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
+                <div className="animate__animated animate__fadeIn animate__delay-2s">
                 <h2>Fale conosco!</h2>
                 
                 <form onSubmit={handleSubmit}>
@@ -86,7 +83,7 @@ export const Contact = () => {
                     }
                   </Row>
                 </form>              
-                </div>}
+                </div>
             </TrackVisibility>
           </Col>
         </Row>

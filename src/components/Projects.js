@@ -1,8 +1,5 @@
-import { Container, Row, Col, Tab, Nav, Overlay, Tooltip } from "react-bootstrap";
+import { Container, Row, Col, Tab, Nav, Image} from "react-bootstrap";
 import { ProjectCard } from "./ProjectCard";
-import projImg1 from "../assets/img/project-img1.png";
-import projImg2 from "../assets/img/project-img2.png";
-import projImg3 from "../assets/img/project-img3.png";
 import colorSharp2 from "../assets/img/color-sharp2.png";
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
@@ -28,8 +25,7 @@ export const Projects = () => {
         <Row>
           <Col size={12}>
             <TrackVisibility>
-              {({ isVisible }) =>
-              <div className={isVisible ? "animate__animated animate__fadeIn": ""}>
+              <div className="animate__animated animate__fadeInUp">
                 <h2>Projetos</h2>
                 <p>A COG apresenta seu primeiro projeto, o <strong>Achei</strong>, um aplicativo que conecta pessoas que precisam de ajuda para busca de serviços, produtos e cupons.</p>
                 <Tab.Container id="projects-tabs" defaultActiveKey="first">
@@ -45,7 +41,7 @@ export const Projects = () => {
                       <Nav.Link eventKey="third" disabled>Pag 3</Nav.Link>
                     </Nav.Item>
                   </Nav>
-                  <Tab.Content id="slideInUp" className={isVisible ? "animate__animated animate__slideInUp" : ""}>
+                  <Tab.Content id="slideInUp" className="animate__animated animate__slideInUp">
                     <Tab.Pane eventKey="first">
                       <Row>
                         {
@@ -69,12 +65,12 @@ export const Projects = () => {
                     </Tab.Pane>
                   </Tab.Content>
                 </Tab.Container>
-              </div>}
+              </div>
             </TrackVisibility>
           </Col>
         </Row>
       </Container>
-      <img className="background-image-right" src={colorSharp2}></img>
+      <Image className="background-image-right" src={colorSharp2}/>
     </section>
   )
 }
