@@ -56,7 +56,7 @@ export const NavBar = () => {
             <span className="navbar-text">
               <div className="social-icon">
                 <a href="#"><img src={navIcon2} alt="" /></a>
-                <a href="#"><img src={navIcon3} alt="" /></a>
+                <a href="https://instagram.com/cogenterprise"  target="_blank"><img src={navIcon3} alt="" /></a>
               </div>
                 <button className="vvd" data-tf-popover="FDEjYZHP" data-tf-button-color="#FFFFFF" data-tf-iframe-props="title=COG Contato" onClick={clickButtonContact}><span>Entre em contato</span></button>
             </span>
